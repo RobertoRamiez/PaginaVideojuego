@@ -1,24 +1,41 @@
 body{
-    background-color: aquamarine;
-    margin: 0;
-    padding: 0;
+    background-color: rgb(51, 62, 95);
+    margin: 0px;
+    padding: 0%;
 }
 
 header{
-    background-color: cornflowerblue;
+    background-color: #6495ed;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
     width: 100%;
-    height: 60px;
+    height: 40px;
+    color: tomato;
 }
 
-header>div>h2{
-    margin-left: 0;
-    padding: 0;
+aside{
+    background-color: rgb(163, 179, 214);
+    width: 7.5%;
+    height: 85px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    margin: 0px;
+    padding: 0px;
+    color: teal;
+}
+
+section{
+    background-color: rgb(4, 4, 43);
+    margin: 0px;
+    padding: 0%;
+    float: right;
+    width: 92.5%;
+    height: 500px;
+    color: white;
 }
 
 .menu{
-    float: right;
+    float: left;
 }
 
 .menu>nav>a{
