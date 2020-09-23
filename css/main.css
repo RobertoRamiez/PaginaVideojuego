@@ -7,24 +7,57 @@ body{
 header{
     background-color: #6495ed;
     width: 100%;
+    height: 45px;
     font-size: 35px;
-    height: 40px;
-    color: rgb(36, 116, 29);
+    color: #24741d;
 }
 
-.text-logo{
+header>div>h2{
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    padding: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: italic;
-    float: left;
 }
 
-.menu{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5px;
-    padding: 0px;
-    font-size: 20px;
-    float: right;
+.text-header{
+    /* Path relativo & Path Global */
+    background-image: url(../images/VideomaniaSpace.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
 }
+
+.text-header>h1{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    padding-top: 5%;
+    padding-left: 5em;
+}
+
+.text-header>h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    padding-top: 0%;
+    padding-left: 7.5em;
+}
+
+.encabezado{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    color: rgb(0, 68, 68);
+}
+
+.encabezado>p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    color: teal;
+}
+
+
 
 aside{
     background-color: rgb(163, 179, 214);
@@ -36,6 +69,26 @@ aside{
     padding: 5px;
     color: teal;
 }
+
+.aside-img{
+    width: 35%;
+}
+
+.aside-right{
+    float: left;
+    width: 60%;
+    height: 400px;
+    padding: 2em;
+    text-align: justify;
+}
+
+.aside-right>h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: seagreen;
+}
+
+
 
 section{
     background-color: rgb(4, 4, 43);
@@ -49,6 +102,109 @@ section{
 
 
 
+footer{
+    background-color:  seagreen;
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+footer>p{
+    margin-left: 20%;
+}
+
+
+
+.titulo-pagina{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    float: left;
+}
+
+.menu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    padding: 0px;
+    font-size: 20px;
+    float: right;
+}
+
 .menu>nav>a{
-    color: white;
+    color: #24741d;
+    text-decoration: none;
+    padding-top: .5em;
+    margin-right: 1em;
+}
+
+.img-acerca{
+    margin-top: 2em;
+    margin-left: 2em;
+    border-radius: 5px;
+    width: 350px;
+}
+
+.aright{
+    float:right;
+    height: 400px;
+    padding-top: 2em;
+}
+
+.aleft{
+    float: left;
+    height: 400px;
+    
+}
+.aleft>p{
+    padding-left: 2em;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+.aservicio{
+    width: 60%;
+}
+
+.simage{
+    width: 35%;
+}
+
+.img-servicio{
+    width: 350px;
+    border-radius: 5px;
+}
+
+.hservices{
+    padding-left: 1em;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px) {
+   
+    .text-header{
+        /*Path relativo & Path Global*/
+       background-image: url(../images/VideomaniaControl.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 250px;
+        
+    }
+    
+    h1,h2,h3,h4,h5,h6{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .text-header>h1{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        
+        padding-left: 0.5em;
+    }
 }

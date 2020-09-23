@@ -4,30 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videojuegos</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="text-logo">
+        <div class="titulo-pagina">
             Videolandia
         </div>
 
         <div class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="juegos.html">Videojuegos</a>
-            <a href="contactos.html">Contactos</a>
-            <a href="legal.html">Legal</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="juegos.html">Videojuegos</a>
+                <a href="contactos.html">Contactos</a>
+                <a href="legal.html">Legal</a>
+            </nav>
         </div>
     </header>
-    
 
-    <aside>
-        <center>Para todas sus necesidades en la industria de entretenimiento electronico</center>
-    </aside>
+    <div>
+        <section class="a-left">
+            <h1><center>Lista de juegos</center></h1>
+             <ul> <!--unordered list -->
+                <li>Far Cry 3</li>
+                <li>Metal Gear Solid 3</li>
+                <li>GTA V</li>
+                <li>Tony Hawk Pro Skater 1 + 2</li>
+            </ul>
+            <h1><center>Proximamente...</center></h1>
+            <ol type="A">
+                <li>Crash 4</li>
+                <li>Hotline Miami 2</li>
+                <li>Fallout New Vegas</li>
+                    <ol type="I">
+                        DLC:
+                        <li>Honest Hearts</li>
+                        <li>Old World Blues</li>
+                        <li>Dead Money</li>
+                        <li>Lonesome Road</li>
+                    </ol>
+                    <br>
+                </li>
+                <li>Jak and Daxter</li>
+            </ol>
+            
+        </section>
 
+        <section class="b-right">
+            <form action="index.html" method="post" enctype="multipart/form-data">
+                <div>
+                    <center>Sugerencia?</center>
+                    <label for="">Nombre de juego</label>
+                    <input type="text" name="Nombre" required>
+                </div>
+                <div>
+                    <label for="">Fecha de lanzamiento</label>
+                    <input type="date" name="Fecha" optional>
+                </div>
+                <div>
+                    <label for="">Selecciona Consola</label>
+                    <select name="Consola" id="">
+                        <option value="PC">PC</option>
+                        <option value="PS">Playstation</option>
+                        <option value="XB">Xbox</option>
+                        <option value="NT">Nintendo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Imagen del juego</label>
+                    <input type="file" name="file">
+                </div>
+                
+                <div>
+                    <button type="submit">Mandar</button>
+                    <button type="reset">Borrar todo</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div>
 
-    <section>
-            <center>No hay videojuegos por el momento</center>
-    </section>
+        <section class="b-left">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3"><h1>Dispositivos disponibles</h1></th>
+                    </tr>
+                <h1>
+                    <tr>
+                        <th>PC</th>
+                        <th>PS</th>
+                        <th>XB</th>
+                        <th>NT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3 PC Gamer</td>
+                        <td>PS2<br>PS3<br>PS4</td>
+                        <td>Original<br>360<br>One X</td>
+                        <td>Switch</td>
+                    </tr>
+                </h1>
+                </tbody>
+
+            </table>
+        </section>
+
+        <section class="b-right">
+            <audio src="">
+
+            </audio>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/375dqL15O9E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        </section>
+    </div>
+
+    <footer>
+        <center>Copyright Videomania (C) 2020 Toyminator</center>
+    </footer>
+
 </body>
 </html>
